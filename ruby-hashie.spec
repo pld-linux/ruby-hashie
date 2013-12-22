@@ -6,7 +6,7 @@
 Summary:	Your friendly neighborhood hash toolkit
 Name:		ruby-%{pkgname}
 Version:	2.0.5
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
@@ -51,6 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README.markdown CHANGELOG.md CONTRIBUTING.md LICENSE
 %{ruby_vendorlibdir}/%{pkgname}.rb
 %{ruby_vendorlibdir}/%{pkgname}
 %{ruby_specdir}/%{pkgname}-%{version}.gemspec

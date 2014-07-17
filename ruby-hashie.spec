@@ -6,7 +6,7 @@
 Summary:	Your friendly neighborhood hash toolkit
 Name:		ruby-%{pkgname}
 Version:	2.0.5
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem

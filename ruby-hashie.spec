@@ -5,12 +5,12 @@
 %define	pkgname	hashie
 Summary:	Your friendly neighborhood hash toolkit
 Name:		ruby-%{pkgname}
-Version:	2.0.5
-Release:	2
+Version:	5.1.0
+Release:	1
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	a25418a88788006d4bb8b6379b7b5059
+# Source0-md5:	8cf083973e76dbd103df554b062cf036
 URL:		https://github.com/intridea/hashie
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.markdown CHANGELOG.md CONTRIBUTING.md LICENSE
+%doc README.md CHANGELOG.md CONTRIBUTING.md LICENSE UPGRADING.md
 %{ruby_vendorlibdir}/%{pkgname}.rb
 %{ruby_vendorlibdir}/%{pkgname}
 %{ruby_specdir}/%{pkgname}-%{version}.gemspec
